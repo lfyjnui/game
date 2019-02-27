@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <RootDir>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\..\..\..\'))</RootDir>
+    <BinDir>$(RootDir)build\bin\</BinDir>
+    <TempDir>$(RootDir)build\temp\</TempDir>
+    <LibDir>$(RootDir)build\lib\</LibDir>
+    <CmnDir>$(RootDir)source\project\cmn\</CmnDir>
+    <DepDir>$(RootDir)source\project\dep\</DepDir>
+    <EngineDir>$(RootDir)source\project\engine\</EngineDir>
+    <GameDir>$(RootDir)source\project\game\</GameDir>
+    <TestDir>$(RootDir)source\project\test\</TestDir>
+    <Tool>$(RootDir)source\project\tool\</Tool>
+    <ProjectDirs>$(CmnDir);$(DepDir);$(EngineDir);$(GameDir);$(TestDir);$(Tool);</ProjectDirs>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(TempDir)$(Configuration)$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDirs)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="RootDir">
+      <Value>$(RootDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BinDir">
+      <Value>$(BinDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TempDir">
+      <Value>$(TempDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LibDir">
+      <Value>$(LibDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CmnDir">
+      <Value>$(CmnDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DepDir">
+      <Value>$(DepDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="EngineDir">
+      <Value>$(EngineDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GameDir">
+      <Value>$(GameDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Test">
+      <Value>$(Test)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Tool">
+      <Value>$(Tool)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ProjectDirs">
+      <Value>$(ProjectDirs)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
