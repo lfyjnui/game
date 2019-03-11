@@ -33,8 +33,7 @@ struct Win32App:public IApp
 
 struct GameApp :public Win32App
 {
-	virtual void Tick() override
-	{
-
-	}
+	GameApp();
+	~GameApp();
+	virtual void Tick() override;
 };
