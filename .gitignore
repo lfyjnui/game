@@ -35,3 +35,4 @@
 *.opendb
 /build
 
+/source/sln/game/client/ipch/

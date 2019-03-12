@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{f8304c2d-5fb6-4d8f-9e97-268e97ffda74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="renderer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="renderwnd.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="renderer.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="device.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="renderwnd.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
